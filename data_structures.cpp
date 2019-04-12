@@ -88,3 +88,16 @@ else {
   if (x-b < a-x) cout << b << "\n";
   else cout << a << "\n";
 }
+
+/*Deques
+
+ A deque is like a vector but better in the sense that it can push and pop from back as well as from the front
+ for example */
+deque<int> d;
+d.push_back(5); // [5]
+d.push_back(2); // [5,2]
+d.push_front(3); // [3,5,2]
+d.pop_back(); // [3,5]
+d.pop_front(); // [5]
+
+// draw back is that its slower then vector 
