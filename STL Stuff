@@ -54,4 +54,21 @@ VECTOR
   4) begin() - Iterator refering to the first element of the map
   5) end() - Returns the iterator pointing to the theoretical element which follows the last element
   6) empty() - 1 if empty else 0
-  7) erase() - 
+  7) erase() - removes a single element or a range of elements from the map
+  8) find() - If present return iterator pointing to it else return end() iterator. Time complexity is O(logN)
+  9) insert() - inserts a single element in O(logN) is position not given with value else time is O(1)
+  
+  
+  UNORDERED MAPS
+  
+  1) find() - returns iterator to element if found else the end() iterator
+  2) rehash() - sets the number of buckets in the container to n
+  3) insert() - inserts a new key value pair into the container
+  4) erase() - Removes either a single element or a range of elements
+  5) count() - 1 if key exists else 0
+  6) load_factor() - Returns a floating value denoting the current load factor in the container. load_factor = current_size/bucket_count
+  7) clear() - clears the map
+  8) begin() - Iterator refering to the first element of the map
+  9) end() -  Returns the iterator pointing to the theoretical element which follows the last element
+  10) operator() - if k matches the key of the element in the container , the function returns a reference to its mapped value
+  
