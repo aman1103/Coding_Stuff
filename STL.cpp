@@ -1,9 +1,57 @@
 // Iterators - Entity with which you can access data within a container with certain restrictions.
 
 
-// String and its functions.
+ STRING
 
-// 1) append() - inserts additonal character at the end of the string. Can also use '+' or '+=' operator.
-string s = "Hell";
-s.append('o');
-//appends 'o' to hell
+ 1) append() - inserts additonal character at the end of the string. Can also use '+' or '+=' operator.
+ 2) begin() - Returns an iterator pointing to the first character. Runs in O(1) time.
+ 3) clear() - Erases all the contents of the string and puts "" of length zero. Time is O(1).
+ 4) compare() - Compares values of two strings. Runs in O(N+M) n beings size1 and m being size2.
+ 5) copy() - Copies the substring of the string in the string passed as parameter and returns the number of characters copied.
+ 6) empty() - Returns a bool value. true if string is empty and false otherwise. Runs in O(1) time.
+ 7) erase() - Deletes a substring of the string.
+ 8) find() - Serches the string and returns the first occurance of the parameter in the string.
+ 9) length() - Returns the length of the string. Time complexity is O(1).
+ 10) size() - Returns the length of the string. Time complexity is O(1).
+ 11) substr() - Returns a string which is the copy of the substring. Runs in O(N) where n is size of the substring.
+   
+   
+VECTOR   
+
+  1) at() - Returns the reference to the element at a particular position. Time complexity is O(1).
+  2) back() - Returns reference to the last element. Time complexity is O(1)
+  3) begin() - Returns an iterator pointing to the first element of the vector. Time complexity is O(1).
+  4) clear() - Delets all the elments of the vector and assign an empty vector to it. Time complexity is O(N)
+  5) empty() - Returns a bool value. true if vector is empty and false otherwise. Time complexity is O(1)
+  6) end() - Returns an iterator pointing to a position which is next to the last element of the vector. Time complexity is O(1)
+  7) erase() - Delets a single element of a single element. 
+  8) front() - Returns an iterator pointing to the first element. Time complexity is O(1)
+  9) insert() - Inserts a new element into a new vector 
+ 10) pop_back() - Removes the last element of the vector. Time complexity is O(1)
+ 11) push_back() - Inserts a new element at the end of the vector. Time complexity is O(1)
+ 12) resize() - Resizes the vector to the new length which can be less/greater than the current length.Time complexity is O(N)
+ 13) size() - Returns the number of elemnts in the vector. Time complexity is O(1)
+  
+   
+ SET and MULTISET
+ 
+  1) begin() - Returns an iterator pointing to the first element of the set. Time complexity is O(1).
+  2) clear() - clears all the elements.
+  3) count() - Returns 1 is element is in the set else 0
+  4) empty() - Returns 1 if set is empty else 0
+  5) end() - Returns an iterator pointing to the position which is next to the last element.
+  6) erase() - Delete a particular element or range of elements from the set.
+  7) find() - Returns iterator to the value if found else returns end() iterator. Time complexity is O(logN)
+  8) insert() - Insert a new element. Time complexity is O(logN)
+  9) size() - Returns the size
+  
+  MAP
+  
+  
+  1) at() - Returns the mapped value of the element identifies by the key
+  2) count() - 1 if match found else 0
+  3) clear() - clears the map
+  4) begin() - Iterator refering to the first element of the map
+  5) end() - Returns the iterator pointing to the theoretical element which follows the last element
+  6) empty() - 1 if empty else 0
+  7) erase() - 
